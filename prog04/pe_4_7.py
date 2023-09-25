@@ -63,8 +63,7 @@ def ritprijs(leeftijd, weekendrit, afstandKM):
     """
     standaardprijsvalue = standaardprijs(afstandKM)
     if weekendrit:
-        if leeftijd >= 65 or leeftijd < 12 :
-            print("test")
+        if leeftijd >= 65 or leeftijd < 12:
             prijs = standaardprijsvalue * 0.65
         else:
             prijs = standaardprijsvalue * 0.6

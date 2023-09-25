@@ -18,6 +18,12 @@ Voeg commentaar toe om je code toe te lichten.
 
 
 def gemiddelde():
+    zin = input()
+    lists = zin.split(" ")
+    totaal = 0
+    for x in lists:
+        totaal = totaal + len(x)
+    average = totaal / len(lists)
     """
     Vraag de gebruiker om een willekeurige zin in te voeren. De functie
     geeft vervolgens de gemiddelde lengte van de woorden in de zin als
@@ -30,7 +36,7 @@ def gemiddelde():
     Returns:
         float: De gemiddelde lengte van de woorden in de ingevoerde zin
     """
-    return
+    return average
 
 
 def development_code():

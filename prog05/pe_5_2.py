@@ -18,6 +18,14 @@ Voeg commentaar toe om je code toe te lichten.
 
 
 def pretty_print():
+    file = open("pe_6_2_generated.txt")
+    lines = file.readlines()
+    file.close()
+    message = ""
+    for x in lines:
+        kaartnr = x.split(",")[0]
+        naam = x.split(",")[1].strip()
+        message = message + f'{naam} heeft kaartnummer: {kaartnr}\n'
     """
     Lees een bestand met klantenkaartnummers en namen uit,
     en plaats deze informatie netjes leesbaar in een string.
@@ -49,7 +57,7 @@ def pretty_print():
     Returns:
         string: De string met de kaartgegevens
     """
-    return
+    return message
 
 
 def development_code():
